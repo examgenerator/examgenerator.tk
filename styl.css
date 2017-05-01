@@ -1,0 +1,57 @@
+body {
+    font: 18px Arial;
+    min-width: 960px;
+}
+h1 {
+    font: 24px Verdana;
+    color: white;
+}
+article header {
+    text-align: center;
+    height: 30px;
+    background: url('blue.png') #4765d9; 
+}
+article section {
+    width: 920px;
+    padding: 20px;
+    background-color: white;
+}
+#center {
+    margin: 0px auto;
+    width: 960px;
+}
+body > header {
+    float: top;
+    height: 35px;
+    background: url('blue.png') #4765d9; 
+    font-size: 20px;
+}
+nav ul {
+    margin: 0px;
+    list-style-type: none;
+}
+nav ul li {
+    float: left;
+    padding: 0px 25px;
+    margin: 2px 5px;
+    height: 35px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+}
+.centered {
+    text-align: center;
+}
+footer {
+    font-size: 14px;
+}
+.documentation{
+    font: 28px Verdana;
+    color: black;
+    text-align: center;
+}
+figcaption {
+    font: 12px Arial;
+    text-align: center;
+}
