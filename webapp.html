@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Exam Generator</title>
+        <script type="text/javascript" src="webapp.js"></script>
+        <script type="text/javascript" src="storage.js"></script>
+        <script type="text/javascript" src="tooltips.js"></script>
+        <link rel="stylesheet" href="wastyl.css">
+        <link rel="shortcut icon" type="image/png" href="icon.png">
+        <link rel="icon" href="icon.ico">
+    </head>
+    <body>
+        <header>
+        <nav>
+            <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="manual.html">How to use</a></li>
+                    <li><a href="subscribe.html">Subscribe for news</a></li>
+                    <li><a href="conditions.html">Conditions of Exam Generator</a></li>
+                    <li><a href="webapp.html">Webapp</a></li>
+            </ul>
+        </nav>
+        </header>
+        <div id="center">
+            <div id="tools">
+                <p id="cookies-warning"><strong>Warning: This site may use cookies.</strong><button class="help-button" onclick="closecookieswarning()"><img src="pictures/close.png" width="15px" height="15px"></button>
+                <h3>Tools</h3>
+                <h4>Tooltips</h4>
+                <p id="tooltip">Here will be shown tooltips.</p>
+                <h4>Saved questions<button class="help-button" onclick="helplocalstorage()"><img src="pictures/help.png" width="15px" height="15px"></button></h4>
+                Available sets of questions: <br>
+                <select id="loaded-select">
+                </select><br>
+                <button onclick="show();enteredWords()">Load set</button><br>
+                <button onclick="del();updatelist()">Delete set</button><br>
+                <button onclick="save();updatelist()">Save set</button><br>
+                Name of set to save: <br>
+                <input id="setname" size="9">
+                </div>
+            <div id="page-content">
+                <p class="centered"><img src="logo-big-50.png" alt="Exam Generator logo"><p>
+                <p class="centered">Please enter questions (one line, one question): <button class="help-button" onclick="help1()"><img src="pictures/help.png" width="15px" height="15px"></button><img src="pictures/clear.png" onclick="cleario();enteredWords()"></p>
+                <p class="centered"><textarea id="input" oninput="enteredWords()"></textarea></p>
+                <p class="centered">You have entered <span id="entered">0</span> question(s).</p>
+                <p class="centered">How many questions?&nbsp;<input type="number" size="3" id="numberofquestions"></p>
+                <p class="centered"><input type="checkbox" id="printver"> Create a version for printing<button class="help-button" onclick="helpprint()"><img src="pictures/help.png" width="15px" height="15px"></button></p>
+                <p class="centered"><button id="generate" onclick="generate()">Generate!</button></p>
+                <p class="centered">Generated exam:</p>
+                <p class="centered"><textarea id="output"></textarea></p>
+            </div>
+        </div>
+    </body>
+    <footer>
+        &copy; Marek Blažek 
+    </footer>
+</html>
