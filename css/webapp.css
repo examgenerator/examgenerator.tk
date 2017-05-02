@@ -1,0 +1,23 @@
+body {
+    font: 20px Arial;
+}
+#tools {
+    font: 15px Arial;
+}
+.row {
+    margin-top: 50px;
+}
+textarea, input{
+    border: 1px solid black;
+}
+#input, #output {
+    width: 200px;
+    height: 125px;
+}
+@media only screen and (min-width: 768px)
+{
+    #input, #output {
+    width: 400px;
+    height: 250px;
+}
+}
