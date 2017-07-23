@@ -16,7 +16,7 @@ textarea, input{
     margin-right: auto;
 }
 #terms, #definitions {
-    width: 150px;
+    max-width: 350px;
     height: 200px;
 }
 button {
@@ -31,7 +31,6 @@ button {
         height: 250px;
 }
     #terms, #definitions {
-        width: 350px;
         height: 350px;
     }
 }
