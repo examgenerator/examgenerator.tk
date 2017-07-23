@@ -1,11 +1,8 @@
-body {
-    font: 20px Arial;
-}
 #tools {
     font: 15px Arial;
 }
-.row {
-    margin-top: 50px;
+#tools button {
+    font: 15px Arial;
 }
 textarea, input{
     border: 1px solid black;
@@ -14,10 +11,27 @@ textarea, input{
     width: 200px;
     height: 125px;
 }
+#connect-input {
+    margin-left: auto;
+    margin-right: auto;
+}
+#terms, #definitions {
+    width: 200px;
+    height: 200px;
+}
+button {
+    border: 1px solid black;
+    background-color: white;
+    font: 20px Arial;
+}
 @media only screen and (min-width: 768px)
 {
     #input, #output {
-    width: 400px;
-    height: 250px;
+        width: 400px;
+        height: 250px;
 }
+    #terms, #definitions {
+        width: 350px;
+        height: 350px;
+    }
 }

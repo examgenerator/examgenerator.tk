@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Connect! Exam Generator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/webapp.css">
+        <link rel="shortcut icon" href="../pictures/favicon.ico">
+        <meta name="description" content="Exam Generator is a simple tool for preparing exams.">
+        <meta name="keywords" content="exam, school, test, vocabulary">
+        <meta name="author" content="Marek Blazek">
+    </head>
+    <body>
+        <script type="text/javascript" src="../js/nav.js"></script>
+        <script type="text/javascript" src="../js/connect.js"></script>
+        <script type="text/javascript" src="../js/storage.js"></script>
+        <script type="text/javascript" src="../js/tooltips.js"></script>
+        <nav id="navbar">
+            <img src="../pictures/logo.png" id="header-logo"> <img src="../pictures/expand.png" id="showmore">
+            <ul id="navcontent" class="invisible">
+                <li><a href="index.html"> Home page</a></li>
+                <li><a href="webapps.html">Web apps</a></li>
+                <li><a href="conditions.html">Conditions</a></li>
+            </ul>
+        </nav>
+        <div class="row first-row">
+            <div class="col-12 center">
+                <p class="centered"><img src="../pictures/logo-connect-50.png" alt="Exam Generator Connect! logo"></p>
+                <table id="connect-input">
+                    <thead>
+                        <tr><td>Term</td><td>Definition</td></tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><textarea id="terms"></textarea></td>
+                            <td><textarea id="definitions"></textarea></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button onclick="generate()">Create</button>
+            </div>
+        </div>
+    </body>
+    <footer>
+        &copy; Marek Blažek <br>
+        Report a bug: <br> examgenerator@marekblazek.cz <br>
+        Please send us as detailed description as possible. You can attach a screenshot, that would be very helpful.
+    </footer>

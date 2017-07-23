@@ -1,4 +1,4 @@
-function navmenu () {
+function navmenu() {
     var content = document.getElementById("navcontent");
     if (content.getAttribute("class") == "invisible")
     {
