@@ -63,9 +63,6 @@ function enteredWords() { //entered words counter
         document.getElementById("entered").innerText = txt.textContent;
     }
     }
-function closecookieswarning() { //cookies warning (btw there are no real cookies, only HTML storage, which is, according to EU, cookies as well)
-    document.getElementById("tools").removeChild(document.getElementById("cookies-warning"));
-}
 function cleario() {
     document.getElementById("input").value = "";
     document.getElementById("output").value = "";

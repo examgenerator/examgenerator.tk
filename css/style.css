@@ -58,6 +58,7 @@ nav ul li a:link, nav ul li a:visited {
 /* General */
 body {
     font: 20px Arial;
+	margin: 0;
 }
 .first-row {
     margin-top: 50px;
@@ -148,6 +149,9 @@ body footer {
     margin-left: auto;
     margin-right: auto;
     font-size: 16px;
+}
+#cookies-warning {
+	font-size: 15px;
 }
 /* Desktop */
 @media only screen and (min-width: 768px)

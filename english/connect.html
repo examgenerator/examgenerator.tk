@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -14,8 +14,7 @@
     <body>
         <script type="text/javascript" src="../js/nav.js"></script>
         <script type="text/javascript" src="../js/connect.js"></script>
-        <script type="text/javascript" src="../js/storage.js"></script>
-        <script type="text/javascript" src="../js/tooltips.js"></script>
+		<script type="text/javascript" src="../js/cookies.js"></script>
         <nav id="navbar">
             <img src="../pictures/logo.png" id="header-logo"> <img src="../pictures/expand.png" id="showmore" onclick="navmenu()">
             <ul id="navcontent" class="invisible">
@@ -27,6 +26,7 @@
         <div class="row first-row">
             <div class="col-12 center">
                 <p><img src="../pictures/logo-connect-50.png" alt="Exam Generator Connect! logo"></p>
+				<p id="cookies-warning"><strong>Warning: This site uses cookies.</strong><img src="../pictures/close.png" width="15px" height="15px" onclick="closecookieswarning()"> More info <a href="dom-storage-info.html">here</a>.</p>
                 <p>Enter terms and definitions to text fields below. Lines must match (if term is on 3rd line in text field Term, then its definition should be on 3rd line of text field Definition).
                 <table id="connect-input">
                     <thead>
@@ -48,3 +48,4 @@
         Report a bug: <br> examgenerator@marekblazek.cz <br>
         Please send us as detailed description as possible. You can attach a screenshot, that would be very helpful.
     </footer>
+</html>

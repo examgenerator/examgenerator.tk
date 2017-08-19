@@ -14,3 +14,23 @@
 [0722/161254.373:INFO:rc_l10n_handler.cc(137)] Trying language from system preferred list: en-US
 [0722/161254.373:INFO:rc_l10n_handler.cc(180)] Retrying after adjustments: en-US
 [0722/161254.373:INFO:rc_l10n_handler.cc(137)] Trying language from system preferred list: en
+[0805/135453.285:INFO:rc_l10n_handler.cc(131)] Language not in the available languages list: en-US
+[0805/135453.286:INFO:rc_l10n_handler.cc(137)] Trying language from system preferred list: en-US
+[0805/135453.286:INFO:rc_l10n_handler.cc(180)] Retrying after adjustments: en-US
+[0805/135453.286:INFO:rc_l10n_handler.cc(137)] Trying language from system preferred list: en
+[0805/135621.311:INFO:rc_l10n_handler.cc(131)] Language not in the available languages list: en-US
+[0805/135621.311:INFO:rc_l10n_handler.cc(137)] Trying language from system preferred list: en-US
+[0805/135621.311:INFO:rc_l10n_handler.cc(180)] Retrying after adjustments: en-US
+[0805/135621.311:INFO:rc_l10n_handler.cc(137)] Trying language from system preferred list: en
+[0815/190108.213:INFO:rc_l10n_handler.cc(131)] Language not in the available languages list: en-US
+[0815/190108.214:INFO:rc_l10n_handler.cc(137)] Trying language from system preferred list: en-US
+[0815/190108.214:INFO:rc_l10n_handler.cc(180)] Retrying after adjustments: en-US
+[0815/190108.214:INFO:rc_l10n_handler.cc(137)] Trying language from system preferred list: en
+[0819/111933.916:INFO:rc_l10n_handler.cc(131)] Language not in the available languages list: en-US
+[0819/111933.917:INFO:rc_l10n_handler.cc(137)] Trying language from system preferred list: en-US
+[0819/111933.917:INFO:rc_l10n_handler.cc(180)] Retrying after adjustments: en-US
+[0819/111933.917:INFO:rc_l10n_handler.cc(137)] Trying language from system preferred list: en
+[0819/112207.701:INFO:rc_l10n_handler.cc(131)] Language not in the available languages list: en-US
+[0819/112207.701:INFO:rc_l10n_handler.cc(137)] Trying language from system preferred list: en-US
+[0819/112207.701:INFO:rc_l10n_handler.cc(180)] Retrying after adjustments: en-US
+[0819/112207.701:INFO:rc_l10n_handler.cc(137)] Trying language from system preferred list: en

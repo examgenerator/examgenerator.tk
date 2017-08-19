@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Connect! Generated exam</title>
+        <style>
+            table {
+                font: 20px Arial;
+            }
+            footer {
+                font: 15px Arial;
+            }
+            .term {
+                padding-right: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <table id="output-table">
+            
+        </table>
+        <footer>
+            Created using: <br>
+            <img src="..\pictures\logo-connect-25.png">
+        </footer>
+		<script type="text/javascript">
+			var termsString;
+			var definitionsString;
+			try {
+				termsString = sessionStorage.terms;
+				definitionsString = sessionStorage.definitions;
+			}
+			catch {
+				alert("An error has occured. Try again.");
+			}
+			var terms = new Array();
+			var definitions = new Array();
+			try {
+				terms = termsString.split("\n");
+				definitions = definitionsString.split("\n");
+				definitions.sort(function () { return 0.5 - Math.random() });
+			}
+			catch {
+				alert("An error has occured. Try again.");
+			}
+			//write to table:
+			for (var x in terms) {
+				var tr = document.createElement("tr");
+				var term = document.createElement("td");
+				term.setAttribute("class", "term");
+				term.innerHTML = terms[x];
+				var definition = document.createElement("td");
+				definition.innerHTML = definitions[x];
+				tr.appendChild(term);
+				tr.appendChild(definition);
+				document.getElementById("output-table").appendChild(tr);
+			}
+		</script>
+    </body>
+</html>
