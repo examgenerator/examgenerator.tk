@@ -4,6 +4,9 @@
         <meta charset="utf-8">
         <title>Connect! Generated exam</title>
         <style>
+			body {
+				width: 595px;
+			}
             table {
                 font: 20px Arial;
             }
@@ -26,22 +29,18 @@
 		<script type="text/javascript">
 			var termsString;
 			var definitionsString;
-			try {
-				termsString = sessionStorage.terms;
-				definitionsString = sessionStorage.definitions;
-			}
-			catch {
-				alert("An error has occured. Try again.");
-			}
 			var terms = new Array();
 			var definitions = new Array();
 			try {
+				termsString = sessionStorage.terms;
+				definitionsString = sessionStorage.definitions;
 				terms = termsString.split("\n");
 				definitions = definitionsString.split("\n");
 				definitions.sort(function () { return 0.5 - Math.random() });
 			}
-			catch {
-				alert("An error has occured. Try again.");
+			catch (ex) {
+				alert("An error has occured. Try again. \n Information for geeks: " + ex);
+				window.close();
 			}
 			//write to table:
 			for (var x in terms) {
