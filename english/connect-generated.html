@@ -32,14 +32,24 @@
 			var terms = new Array();
 			var definitions = new Array();
 			try {
+				//load from local storage:
 				termsString = sessionStorage.terms;
 				definitionsString = sessionStorage.definitions;
+				//excepptions:
+				if (termsString == null && definitionsString == null)
+					throw "Failed to load terms and definitions or terms and definitions values are null."
+				if (termsString == null)
+					throw "Failed to load terms or terms value is null.";
+				if (definitionsString == null)
+					throw "Failed to load definitions or definitions value is null.";
+				//create arrays for terms and definitions
 				terms = termsString.split("\n");
 				definitions = definitionsString.split("\n");
+				//randomize definitions
 				definitions.sort(function () { return 0.5 - Math.random() });
 			}
 			catch (ex) {
-				alert("An error has occured. Try again. \n Information for geeks: " + ex);
+				alert("An error has occured. Try again. \nInformation for geeks: " + ex);
 				window.close();
 			}
 			//write to table:
